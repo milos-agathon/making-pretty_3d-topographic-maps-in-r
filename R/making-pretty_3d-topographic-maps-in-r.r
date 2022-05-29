@@ -114,12 +114,14 @@ austria_dem %>%
   sphere_shade(texture = "desert") %>%
   add_overlay(austria_img, alphalayer = 0.99) %>%
   plot_3d(austria_dem,
-    zscale = 15, fov = 0, theta = 0, zoom = 0.55,
-    phi = 75, windowsize = c(1552, 537), background = "black"
+    zscale = 15, fov = 0, theta = 0, zoom = 0.55, solid = F,
+    solidcolor = "white", solidlinecolor = "white", phi = 75,
+    shadow_darkness = 0, shadowdepth = 0, shadowwidth = 0,
+    windowsize = c(w, h), background = "black"
   )
 
 render_highquality(
-  filename = "austria_dem.png", lightintensity = 1500,
+  filename = "austria_dem_test2.png", lightintensity = 1500,
   lightaltitude = 90, title_text = "Topography of AUSTRIA\n©2022 Milos Popovic https://milospopovic.net",
   title_font = "Georgia", title_color = "grey20", title_size = 100, title_offset = c(
     360,
