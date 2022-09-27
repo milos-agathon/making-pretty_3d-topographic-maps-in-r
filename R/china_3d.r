@@ -2,11 +2,11 @@
 # 3D relief map of china in R
 # Milos Popovic 2022/06/14
 #############################################
-setwd("/Users/mpopovic3/Downloads")
 # libraries we need
 libs <- c(
-    "elevatr", "rayshader", "tidyverse", "sf", "giscoR", "jsonlite",
-    "httr", "png"
+    "elevatr", "rayshader", "tidyverse", 
+    "sf", "giscoR", "jsonlite", "httr", 
+    "png"
 )
 
 # install missing libraries
